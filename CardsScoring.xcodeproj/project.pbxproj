@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		ECAE2C4C21FED0D7008F184C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C4B21FED0D7008F184C /* AppDelegate.swift */; };
-		ECAE2C4E21FED0D7008F184C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C4D21FED0D7008F184C /* ViewController.swift */; };
-		ECAE2C5121FED0D7008F184C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C4F21FED0D7008F184C /* Main.storyboard */; };
+		ECAE2C4E21FED0D7008F184C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C4D21FED0D7008F184C /* HomeViewController.swift */; };
+		ECAE2C5121FED0D7008F184C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C4F21FED0D7008F184C /* Home.storyboard */; };
 		ECAE2C5421FED0D7008F184C /* CardsScoring.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C5221FED0D7008F184C /* CardsScoring.xcdatamodeld */; };
 		ECAE2C5621FED0DA008F184C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C5521FED0DA008F184C /* Assets.xcassets */; };
 		ECAE2C5921FED0DA008F184C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C5721FED0DA008F184C /* LaunchScreen.storyboard */; };
 		ECAE2C6421FED0DA008F184C /* CardsScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C6321FED0DA008F184C /* CardsScoringTests.swift */; };
 		ECAE2C6F21FED0DA008F184C /* CardsScoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C6E21FED0DA008F184C /* CardsScoringUITests.swift */; };
+		ECAE2C7F21FED275008F184C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C7E21FED275008F184C /* TabBarController.swift */; };
+		ECAE2C8121FED640008F184C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C8021FED640008F184C /* TabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* Begin PBXFileReference section */
 		ECAE2C4821FED0D7008F184C /* CardsScoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsScoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAE2C4B21FED0D7008F184C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECAE2C4D21FED0D7008F184C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECAE2C5021FED0D7008F184C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECAE2C4D21FED0D7008F184C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ECAE2C5021FED0D7008F184C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		ECAE2C5321FED0D7008F184C /* CardsScoring.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardsScoring.xcdatamodel; sourceTree = "<group>"; };
 		ECAE2C5521FED0DA008F184C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECAE2C5821FED0DA008F184C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		ECAE2C6A21FED0DA008F184C /* CardsScoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsScoringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAE2C6E21FED0DA008F184C /* CardsScoringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScoringUITests.swift; sourceTree = "<group>"; };
 		ECAE2C7021FED0DA008F184C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAE2C7E21FED275008F184C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		ECAE2C8021FED640008F184C /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,9 @@
 		ECAE2C4A21FED0D7008F184C /* CardsScoring */ = {
 			isa = PBXGroup;
 			children = (
+				ECAE2C7D21FED23C008F184C /* Controllers */,
+				ECAE2C7C21FED229008F184C /* Scenes */,
 				ECAE2C4B21FED0D7008F184C /* AppDelegate.swift */,
-				ECAE2C4D21FED0D7008F184C /* ViewController.swift */,
-				ECAE2C4F21FED0D7008F184C /* Main.storyboard */,
 				ECAE2C5521FED0DA008F184C /* Assets.xcassets */,
 				ECAE2C5721FED0DA008F184C /* LaunchScreen.storyboard */,
 				ECAE2C5A21FED0DA008F184C /* Info.plist */,
@@ -126,6 +130,24 @@
 				ECAE2C7021FED0DA008F184C /* Info.plist */,
 			);
 			path = CardsScoringUITests;
+			sourceTree = "<group>";
+		};
+		ECAE2C7C21FED229008F184C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ECAE2C4F21FED0D7008F184C /* Home.storyboard */,
+				ECAE2C8021FED640008F184C /* TabBar.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ECAE2C7D21FED23C008F184C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECAE2C4D21FED0D7008F184C /* HomeViewController.swift */,
+				ECAE2C7E21FED275008F184C /* TabBarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAE2C8121FED640008F184C /* TabBar.storyboard in Resources */,
 				ECAE2C5921FED0DA008F184C /* LaunchScreen.storyboard in Resources */,
 				ECAE2C5621FED0DA008F184C /* Assets.xcassets in Resources */,
-				ECAE2C5121FED0D7008F184C /* Main.storyboard in Resources */,
+				ECAE2C5121FED0D7008F184C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECAE2C4E21FED0D7008F184C /* ViewController.swift in Sources */,
+				ECAE2C4E21FED0D7008F184C /* HomeViewController.swift in Sources */,
+				ECAE2C7F21FED275008F184C /* TabBarController.swift in Sources */,
 				ECAE2C5421FED0D7008F184C /* CardsScoring.xcdatamodeld in Sources */,
 				ECAE2C4C21FED0D7008F184C /* AppDelegate.swift in Sources */,
 			);
@@ -297,12 +321,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ECAE2C4F21FED0D7008F184C /* Main.storyboard */ = {
+		ECAE2C4F21FED0D7008F184C /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ECAE2C5021FED0D7008F184C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		ECAE2C5721FED0DA008F184C /* LaunchScreen.storyboard */ = {
@@ -367,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rajareddy.CardsScoring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajareddy.CardsScoring.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rajareddy.CardsScoring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajareddy.CardsScoring.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
