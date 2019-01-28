@@ -17,6 +17,10 @@
 		ECAE2C6F21FED0DA008F184C /* CardsScoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C6E21FED0DA008F184C /* CardsScoringUITests.swift */; };
 		ECAE2C7F21FED275008F184C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C7E21FED275008F184C /* TabBarController.swift */; };
 		ECAE2C8121FED640008F184C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C8021FED640008F184C /* TabBar.storyboard */; };
+		ECAE2C8321FED889008F184C /* MatchDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C8221FED889008F184C /* MatchDetails.storyboard */; };
+		ECAE2C8521FEDAAC008F184C /* MatchDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C8421FEDAAC008F184C /* MatchDetailsVC.swift */; };
+		ECAE2C8921FEDB84008F184C /* MatchDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE2C8721FEDB84008F184C /* MatchDetailsCell.swift */; };
+		ECAE2C8A21FEDB84008F184C /* MatchDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECAE2C8821FEDB84008F184C /* MatchDetailsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		ECAE2C7021FED0DA008F184C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECAE2C7E21FED275008F184C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		ECAE2C8021FED640008F184C /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		ECAE2C8221FED889008F184C /* MatchDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchDetails.storyboard; sourceTree = "<group>"; };
+		ECAE2C8421FEDAAC008F184C /* MatchDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsVC.swift; sourceTree = "<group>"; };
+		ECAE2C8721FEDB84008F184C /* MatchDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsCell.swift; sourceTree = "<group>"; };
+		ECAE2C8821FEDB84008F184C /* MatchDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		ECAE2C4A21FED0D7008F184C /* CardsScoring */ = {
 			isa = PBXGroup;
 			children = (
+				ECAE2C8621FEDB4B008F184C /* Views */,
 				ECAE2C7D21FED23C008F184C /* Controllers */,
 				ECAE2C7C21FED229008F184C /* Scenes */,
 				ECAE2C4B21FED0D7008F184C /* AppDelegate.swift */,
@@ -137,6 +146,8 @@
 			children = (
 				ECAE2C4F21FED0D7008F184C /* Home.storyboard */,
 				ECAE2C8021FED640008F184C /* TabBar.storyboard */,
+				ECAE2C8221FED889008F184C /* MatchDetails.storyboard */,
+				ECAE2C8821FEDB84008F184C /* MatchDetailsCell.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -146,8 +157,17 @@
 			children = (
 				ECAE2C4D21FED0D7008F184C /* HomeViewController.swift */,
 				ECAE2C7E21FED275008F184C /* TabBarController.swift */,
+				ECAE2C8421FEDAAC008F184C /* MatchDetailsVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECAE2C8621FEDB4B008F184C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECAE2C8721FEDB84008F184C /* MatchDetailsCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAE2C8121FED640008F184C /* TabBar.storyboard in Resources */,
+				ECAE2C8321FED889008F184C /* MatchDetails.storyboard in Resources */,
+				ECAE2C8A21FEDB84008F184C /* MatchDetailsCell.xib in Resources */,
 				ECAE2C5921FED0DA008F184C /* LaunchScreen.storyboard in Resources */,
 				ECAE2C5621FED0DA008F184C /* Assets.xcassets in Resources */,
 				ECAE2C5121FED0D7008F184C /* Home.storyboard in Resources */,
@@ -282,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECAE2C8521FEDAAC008F184C /* MatchDetailsVC.swift in Sources */,
 				ECAE2C4E21FED0D7008F184C /* HomeViewController.swift in Sources */,
+				ECAE2C8921FEDB84008F184C /* MatchDetailsCell.swift in Sources */,
 				ECAE2C7F21FED275008F184C /* TabBarController.swift in Sources */,
 				ECAE2C5421FED0D7008F184C /* CardsScoring.xcdatamodeld in Sources */,
 				ECAE2C4C21FED0D7008F184C /* AppDelegate.swift in Sources */,
